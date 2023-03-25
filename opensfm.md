@@ -1,6 +1,13 @@
 
 ###Structure From Motion
+```
+설치방법 
 - https://junk-box.net/toy/2019/10/01/opensfm%E3%82%92wsl-ubuntu%E7%92%B0%E5%A2%83%E4%B8%8B%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/
+
+
+```
+
+
 ```
 sudo apt install -y libopencv-dev python3-opencv
 opencv_version
@@ -17,6 +24,25 @@ cmake .. -DBUILD_PYTHON=ON -DPYBIND11_PYTHON_VERSION=3.6 -DPYTHON_INSTALL_DIR=/u
 make -j3
 sudo apt-get install python3-dev       (Python.h: No such file or directory error 해소문제)
 sudo make install  
+
+sudo apt install -y cmake libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev
+ >>> cmake 만들기 방법.. 
+ >>> https://somjang.tistory.com/entry/Ubuntu-CMake-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95
+
+>>> openssl 에러시
+sudo apt install libssl-dev
+
+cd ~/
+git clone https://ceres-solver.googlesource.com/ceres-solver
+cd ceres-solver
+mkdir -p build
+cd build
+cmake .. -DCMAKE_CXX_FLAGS=-fPIC 
+make -j3
+make test
+sudo make install
+
+
 
 
 ```
