@@ -43,7 +43,10 @@ make test
 sudo make install
 
 
-
+>>>>  requirements.txt including not existing flask version
+>>>>  pytho3.8 설정
+>>>> https://jjeongil.tistory.com/1806
+>>>> python3 -m pip install --upgrade pip
 
 ```
 
