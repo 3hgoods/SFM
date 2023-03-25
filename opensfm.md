@@ -23,6 +23,8 @@ cd build
 cmake .. -DBUILD_PYTHON=ON -DPYBIND11_PYTHON_VERSION=3.6 -DPYTHON_INSTALL_DIR=/usr/local/lib/python3.6/dist-packages/
 make -j3
 sudo apt-get install python3-dev       (Python.h: No such file or directory error 해소문제)
+>>>> sudo apt install libpython3.8-dev
+
 sudo make install  
 
 sudo apt install -y cmake libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev
@@ -47,7 +49,7 @@ sudo make install
 >>>>  pytho3.8 설정
 >>>> https://jjeongil.tistory.com/1806
 >>>> python3 -m pip install --upgrade pip
-
+>>>> 
 ```
 
 
